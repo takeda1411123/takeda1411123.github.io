@@ -7,7 +7,7 @@ export const certificateData = [
       },
       {
         id: 2,
-        image: "https://public-portfolio-at.s3.amazonaws.com/cloud-architect-gcp.png",
+        image: "https://public-portfolio-at.s3.amazonaws.com/cloudairchitect.png",
         title: "Google Cloud Certification Professional Cloud Architect",
         link: "https://example.com/certificate2",
       },
