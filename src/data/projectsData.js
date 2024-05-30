@@ -1,50 +1,34 @@
-import eight from '../assets/svg/projects/eight.svg'
 import seven from '../assets/svg/projects/seven.svg'
-import six from '../assets/svg/projects/six.svg'
+import gcp from '../assets/svg/projects/gcp.png'
+import unityGame from '../assets/svg/projects/unity-game.png'
 
 
 export const projectsData = [
     {
         id: 1,
-        projectName: 'AAA project',
-        projectDesc: 'xxxx',
-        tags: ['Go', 'Python', 'React'],
+        projectName: 'Contributing to the Construction of a Data Warehouse Using GCP',
+        projectDesc: 'As a project team member, I contributed to building a data warehouse for a financial company utilizing GCP. The project leveraged GCP services such as BigQuery and Cloud Composer. I was also involved in constructing a data pipeline using Airflow.',
+        tags: ['Python','GCP'],
         code: '',
         demo: 'https://',
-        image: six
+        image: gcp
     },
     {
         id: 2,
-        projectName: 'AAA project',
+        projectName: 'Development of a Web Application for Advertising Report Generation',
         projectDesc: 'xxxx',
-        tags: ['Go', 'Python', 'React'],
+        tags: ['React', 'Golang', 'AWS'],
         code: '',
         demo: 'https://',
         image: seven
     },
     {
         id: 3,
-        projectName: 'AAA project',
-        projectDesc: 'xxxx',
-        tags: ['Go', 'Python', 'React'],
+        projectName: 'Development of a Multi-Player Game Using Unity and Photon',
+        projectDesc: 'Developed a first-person shooter (FPS) game from scratch using Unity and Photon. Additionally, I worked on developing a login feature utilizing a database. For more details, please refer to the demo video.',
+        tags: ['Unity', 'Photon', 'MySQL'],
         code: '',
-        demo: 'https://',
-        image: eight
+        demo: 'https://www.youtube.com/watch?v=DhmeP3MkOqM',
+        image: unityGame
     }
 ]
-
-
-// Do not remove any fields.
-// Leave it blank instead as shown below
-
-/* 
-{
-    id: 1,
-    projectName: 'Car Pooling System',
-    projectDesc: '',
-    tags: ['Flutter', 'React'],
-    code: '',
-    demo: '',
-    image: ''
-}, 
-*/
