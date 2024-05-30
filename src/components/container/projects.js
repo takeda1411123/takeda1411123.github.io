@@ -19,7 +19,7 @@ const Projects = () => {
     viewArr: {
       color: theme.buttonColor,
       backgroundColor: theme.secondary,
-      width: '40px',
+      width: '100px',
       height: '40px',
       padding: '0.5rem',
       fontSize: '1.05rem',
