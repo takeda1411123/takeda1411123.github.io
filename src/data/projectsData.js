@@ -16,7 +16,7 @@ export const projectsData = [
     {
         id: 2,
         projectName: 'Development of a Web Application for Advertising Report Generation',
-        projectDesc: 'xxxx',
+        projectDesc: 'As a project team member, I participated in the development of a web application for automated advertising report generation. The frontend was built using React, the backend was developed with Golang, and the infrastructure was set up using AWS and Terraform.',
         tags: ['React', 'Golang', 'AWS'],
         code: '',
         demo: 'https://',
