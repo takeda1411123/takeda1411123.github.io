@@ -1,7 +1,5 @@
 import seven from '../assets/svg/projects/seven.svg'
 import gcp from '../assets/svg/projects/gcp.png'
-import unityGame from '../assets/svg/projects/unity-game.png'
-
 
 export const projectsData = [
     {
@@ -21,14 +19,5 @@ export const projectsData = [
         code: '',
         demo: 'https://',
         image: seven
-    },
-    {
-        id: 3,
-        projectName: 'Development of a Multi-Player Game Using Unity and Photon',
-        projectDesc: 'Developed a first-person shooter (FPS) game from scratch using Unity and Photon. Additionally, I worked on developing a login feature utilizing a database. For more details, please refer to the demo video.',
-        tags: ['Unity', 'Photon', 'MySQL'],
-        code: '',
-        demo: 'https://www.youtube.com/watch?v=DhmeP3MkOqM',
-        image: unityGame
     }
 ]
