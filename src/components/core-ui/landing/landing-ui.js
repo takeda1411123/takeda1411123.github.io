@@ -6,7 +6,7 @@ import { headerData } from '../../../data/headerData';
 import './landing.css';
 
 import {
-    FaFacebook, FaGithub, FaLinkedin, FaTwitter
+    FaGithub, FaLinkedin,
 } from 'react-icons/fa';
 import { contactsData } from '../../../data/contactsData';
 
@@ -21,32 +21,6 @@ function LandingUI({ theme, drawerOpen, classes }) {
                     style={{ backgroundColor: theme.quaternary }}
                 >
                     <div className='lcl--content'>
-                        {contactsData.linkedIn && (
-                            <a
-                                href={contactsData.linkedIn}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaLinkedin
-                                    className='landing--social linkedin-icon'
-                                    style={{ color: theme.primary }}
-                                    aria-label='LinkedIn'
-                                />
-                            </a>
-                        )}
-                        {contactsData.github && (
-                            <a
-                                href={contactsData.github}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaGithub
-                                    className='landing--social'
-                                    style={{ color: theme.primary }}
-                                    aria-label='GitHub'
-                                />
-                            </a>
-                        )}
                         {contactsData.linkedIn && (
                             <a
                                 href={contactsData.linkedIn}

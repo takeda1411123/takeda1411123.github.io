@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCode, FaPlay } from 'react-icons/fa';
+// import { FaCode, FaPlay } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 import placeholder from '../../../assets/png/placeholder.png';
 import './single-project.css';
@@ -22,7 +22,7 @@ function SingleProjectUI({ id, name, desc, tags, code, demo, image, theme, class
                         {name}
                     </h2>
                     <img src={image ? image : placeholder} alt={name} />
-                    <div className='project--showcaseBtn'>
+                    {/* <div className='project--showcaseBtn'>
                         <a
                             href={demo}
                             target='_blank'
@@ -61,7 +61,7 @@ function SingleProjectUI({ id, name, desc, tags, code, demo, image, theme, class
                                 aria-label='Code'
                             />
                         </a>
-                    </div>
+                    </div> */}
                 </div>
                 <p
                     className='project--desc'

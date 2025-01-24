@@ -1,7 +1,7 @@
 import { Drawer } from '@mui/material';
 import React from 'react';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
-import { FaFolderOpen, FaUser } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
 import { HiDocumentText } from 'react-icons/hi';
 import { IoClose, IoHomeSharp, IoMenuSharp } from 'react-icons/io5';
 import { MdPhone } from 'react-icons/md';
@@ -11,8 +11,6 @@ import { headerData } from '../../../data/headerData';
 import './navbar.css';
 
 function NavbarUI({ theme, shortname, classes, handleDrawerOpen, handleDrawerClose, open, changeTheme, isDark }) {
-
-
     return (
         <div className='navbar'>
             <div className='navbar--container'>
@@ -96,7 +94,7 @@ function NavbarUI({ theme, shortname, classes, handleDrawerOpen, handleDrawerClo
 
                         <Fade left>
                             <NavLink
-                                to='/#resume'
+                                to='/#projects'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -106,7 +104,7 @@ function NavbarUI({ theme, shortname, classes, handleDrawerOpen, handleDrawerClo
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Resume
+                                        Projects
                                     </span>
                                 </div>
                             </NavLink>
@@ -126,7 +124,7 @@ function NavbarUI({ theme, shortname, classes, handleDrawerOpen, handleDrawerClo
                                 </span>
                             </div>
                         </Fade>
-
+                        {/* 
                         <Fade left>
                             <NavLink
                                 to='/#blog'
@@ -143,7 +141,8 @@ function NavbarUI({ theme, shortname, classes, handleDrawerOpen, handleDrawerClo
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </Fade> 
+                        */}
 
                         <Fade left>
                             <NavLink

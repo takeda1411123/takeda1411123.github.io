@@ -1,10 +1,12 @@
-import { IconButton, Snackbar, SnackbarContent } from '@mui/material';
+// import { IconButton, Snackbar, SnackbarContent } from '@mui/material';
 import React, { useContext } from 'react';
-import { AiOutlineCheckCircle, AiOutlineSend } from 'react-icons/ai';
-import { FaFacebook, FaGithub, FaLinkedinIn, FaMediumM, FaStackOverflow, FaTwitter, FaYoutube } from 'react-icons/fa';
-import { FiAtSign, FiPhone } from 'react-icons/fi';
+// import { AiOutlineCheckCircle, AiOutlineSend } from 'react-icons/ai';
+// import { FaFacebook, FaGithub, FaLinkedinIn, FaMediumM, FaStackOverflow, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+// import { FiAtSign, FiPhone } from 'react-icons/fi';
+import { FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
-import { IoClose } from 'react-icons/io5';
+// import { IoClose } from 'react-icons/io5';
 import { ThemeContext } from '../../../contexts/theme-context';
 import { contactsData } from '../../../data/contactsData';
 import './contacts.css';
