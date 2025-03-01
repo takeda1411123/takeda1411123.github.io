@@ -11,3 +11,9 @@
     width: 100%;
     margin: 1rem;
 }
+
+@media (max-width: 600px) {
+    .css-ahj2mt-MuiTypography-root {
+        font-size: 0.875rem; /* 文字を小さく */
+    }
+}

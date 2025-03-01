@@ -28,9 +28,9 @@ function SingleGameUI({ id, title, desc, tags, link, theme, classes }) {
                             ))}
                         </div>
                     </div>
-                    <Youtube 
-                        videoId={link}
-                    />
+                    <div className="gameVideo">
+                        <Youtube videoId={link} />
+                    </div>
                 </div>
                 <p
                     className='project--desc'
