@@ -137,3 +137,56 @@
   word-break: break-word;
   line-height: 100%;
 }
+
+@media (max-width: 600px) {
+  .gameProject {
+    box-shadow: 4px 4px 8px rgba(36, 3, 3, 0.2);
+    width: 100%;  /* 画面幅いっぱいに */
+    max-width: 100%;  /* 画面いっぱいになりすぎないように調整 */
+    height: auto;  /* 高さをコンテンツに応じて自動調整 */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; 
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .game {
+    flex-direction: column; /* スマホでは縦並びに */
+    gap: 1rem; /* 間隔を適度に */
+  }
+
+  .gameContent {
+    width: 100%; /* 説明が横幅いっぱい */
+    text-align: center; /* 説明を中央揃え */
+  }
+
+  .gameDescription {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    text-align: left;  /* 左詰めにする */
+  }
+
+  .gameTag {
+    color: #fffcfc; /* タグの色 */
+    background-color: #968e8e; /* タグの背景色 */
+    padding: 4px 8px; /* タグの内側余白 */
+    border-radius: 12px; /* タグを丸みのある形に */
+    font-size: 0.8rem;
+  }
+
+  .gameVideo {
+    width: 100%; /* 動画を横幅いっぱい */
+    display: flex;
+    justify-content: center; /* 動画を中央配置 */
+  }
+
+  .gameVideo iframe {
+    width: 100%; /* iframeも横幅いっぱい */
+    height: auto;
+  }
+}

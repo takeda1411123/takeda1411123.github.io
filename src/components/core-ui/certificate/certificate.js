@@ -64,7 +64,15 @@ const Certificate = () => {
                   justifyContent: "space-between",
                   alignItems: "center",
                 }}>
-                <Typography>{item.title}</Typography>
+                <Typography
+                  sx={{
+                    fontSize: "1rem", // デフォルトのフォントサイズ
+                    "@media (max-width: 600px)": {
+                      fontSize: "0.5rem", // スマホ画面でフォントサイズを小さくする
+                    },
+                  }}>
+                  {item.title}
+                </Typography>
                 <IconButton>
                   <Link href={item.link}>
                     <HiExternalLink />
