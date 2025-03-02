@@ -11,6 +11,8 @@
   position: relative;
   cursor: pointer;
   overflow: hidden;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .game {
@@ -138,6 +140,18 @@
   line-height: 100%;
 }
 
+.gameProjectLink {
+  text-decoration: none; /* 下線を消す */
+  color: inherit; /* 親要素の色を継承 */
+  display: block; /* 全体をクリック可能にする */
+}
+
+.gameProjectLink:hover .gameProject {
+  cursor: pointer;
+  transform: scale(1.02); /* 少し拡大 */
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2); /* シャドウを強調 */
+}
+
 @media (max-width: 600px) {
   .gameProject {
     box-shadow: 4px 4px 8px rgba(36, 3, 3, 0.2);
@@ -153,6 +167,7 @@
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   .game {
@@ -188,5 +203,11 @@
   .gameVideo iframe {
     width: 100%; /* iframeも横幅いっぱい */
     height: auto;
+  }
+
+  .gameProjectLink:hover .gameProject {
+    cursor: pointer;
+    transform: scale(1.02); /* 少し拡大 */
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2); /* シャドウを強調 */
   }
 }

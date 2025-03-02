@@ -2,7 +2,7 @@ import { makeStyles } from '@mui/styles';
 import React from 'react';
 import SingleGameUI from '../core-ui/single-game/single-game-ui';
 
-const SingleGame = ({ id, title, desc, tags, link, theme }) => {
+const SingleGame = ({ id, title, desc, tags, video, link, theme }) => {
   const useStyles = makeStyles((t) => ({
     iconBtn: {
       display: 'flex',
@@ -29,14 +29,15 @@ const SingleGame = ({ id, title, desc, tags, link, theme }) => {
   }));
 
   const classes = useStyles();
+  // console.log("Video ID:", video);
 
   return (
     <SingleGameUI
-      classes={classes}
       id={id}
       title={title}
       desc={desc}
       tags={tags}
+      video={video}
       link={link}
       theme={theme}
     />
