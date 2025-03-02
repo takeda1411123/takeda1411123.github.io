@@ -23,7 +23,8 @@ function GamesUI({ theme, classes }) {
                                         title={game.gameTitle}
                                         desc={game.gameDescription}
                                         tags={game.tags}
-                                        link={game.youtubeId}
+                                        video={game.youtubeId}
+                                        link={game.gameLink}
                                     />
                             ))}
                         </div>
