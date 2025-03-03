@@ -1,6 +1,7 @@
 import React from 'react';
 import Youtube from 'react-youtube';
 import './single-game.css';
+import { Link } from 'react-router-dom';
 
 function SingleGameUI({ id, title, desc, tags, video, link, theme }) {
 
@@ -8,7 +9,7 @@ function SingleGameUI({ id, title, desc, tags, video, link, theme }) {
 
     return (
         <div key={id}>
-            <a href={link} target='_blank' rel='noopener noreferrer' className='gameProjectLink'>
+            <Link to={link} className='gameProjectLink'>
                 <div
                     className='gameProject'
                     style={{ backgroundColor: theme.quaternary }}
@@ -54,7 +55,7 @@ function SingleGameUI({ id, title, desc, tags, video, link, theme }) {
                         ))}
                     </div>
                 </div>
-            </a>
+            </Link> 
         </div>
     );
 }
