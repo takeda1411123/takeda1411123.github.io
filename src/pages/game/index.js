@@ -12,7 +12,6 @@ function GamePage() {
 
     const filteredArticles = gamesData.filter((game) => {
         const content = game.gameTitle + game.gameDescription + game.tags
-        console.log("Video ID:", game.youtubeId);
         return content.toLowerCase().includes(search.toLowerCase())
     })
 
